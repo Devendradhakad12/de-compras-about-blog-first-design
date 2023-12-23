@@ -52,8 +52,8 @@ const AboutUs = () => {
       <div className="image-slider-div">
         <h3>Our Offers</h3>
         <SimpleImageSlider
-          width={796}
-          height={404}
+          width={ windowSize.innerWidth > 650 ?796:400}
+          height={ windowSize.innerWidth > 650 ? 404 :200}
           images={SliderImages}
           showBullets={true}
           showNavs={true}
