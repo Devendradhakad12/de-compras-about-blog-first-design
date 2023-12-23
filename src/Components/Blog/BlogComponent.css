@@ -1,0 +1,137 @@
+.bolg-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.bolg-container h2 {
+  font-weight: 300;
+  font-size: 35px;
+  margin: 20px 0 0px 0;
+}
+.bolg-posts {
+  display: flex;
+  width: 100%;
+  padding: 0 20%;
+}
+.post-card{
+    animation: fadeDown 1s;
+}
+
+.posts {
+  width: 70%;
+}
+.post-image {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.post-heading-and-date {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.post-heading h1 {
+  font-size: 30px;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 40px;
+}
+.post-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+.post-date span {
+  background-color: rgb(0, 78, 67);
+  width: 70px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+.post-description {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 25px;
+}
+.post-description a {
+  text-decoration: none;
+}
+
+.aside {
+  width: 30%;
+  padding: 40px;
+}
+
+.post-list,
+.category-list {
+  margin-top: 20px;
+}
+
+.post-list li,
+.category-list li {
+  list-style: none;
+  margin: 6px 0;
+}
+
+.post-list li a,
+.category-list li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(1, 126, 95);
+}
+
+.categories-div {
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 750px) {
+  .bolg-posts {
+    flex-direction: column;
+  }
+  .posts {
+    width: 100%;
+  }
+  .aside {
+    width: 100%;
+  }
+  .post-heading-and-date{
+    flex-direction: column;
+  }
+  .post-heading h1{
+    font-size: 20px;
+  }
+  .post-date {
+    width: 60px;
+
+  }
+  .post-date span{
+    font-size: 14px;
+    height: 23px;
+  }
+}
+
+ 
+/*  animation */
+@keyframes  fadeDown {
+    0%{
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

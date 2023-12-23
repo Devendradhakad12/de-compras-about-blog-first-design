@@ -1,0 +1,95 @@
+ 
+ 
+.about-card {
+  display: flex;
+}
+.image-div {
+  width: 50%;
+  animation: fadeUp 1s;
+}
+.image-div img {
+  width: 100%;
+  object-fit: cover;
+}
+.about-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  animation: fadeDown 1s;
+}
+.about-text-div h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+.about-text-div p {
+  font-weight: 400;
+  width: 70%;
+  text-align: center;
+}
+
+
+.image-slider-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(6, 77, 77);
+    padding: 50px 0 100px 0 ;
+    margin-top: 0;
+    color: white;
+}
+.image-slider-div h3{
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 650px) {
+  .about-card {
+    flex-direction: column;
+  }
+  .image-div {
+    width: 100%;
+  }
+  .about-text-div {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .about-text-div p {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .menu-bar-icon {
+    display: none;
+  }
+}
+
+
+/*  animation */
+@keyframes  fadeUp {
+  0%{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes  fadeDown {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

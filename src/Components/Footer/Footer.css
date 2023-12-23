@@ -1,0 +1,27 @@
+footer {
+    background: #e3e6f3;
+    padding: 20px 40px;
+}
+
+footer p {
+    color: #1a1a1a;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer .socials {
+    text-align: center;
+}
+
+footer .socials .icons {
+    text-decoration: none;
+    color: #357960;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.5s ease;
+}
+
+footer .socials .icons:hover {
+    transform: translateY(-5px);
+}

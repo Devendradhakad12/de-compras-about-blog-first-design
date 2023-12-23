@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.nav-logo img {
+  width: 300px;
+}
+
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links-desktop li,
+.nav-links-mobile li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.nav-links-desktop li .pages,
+.nav-links-mobile li .pages {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.nav-links-desktop li .pages::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #357960;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s ease;
+}
+
+.nav-links-desktop .pages:hover::after {
+  width: 100%;
+}
+
+.nav-links-desktop li .pages:hover {
+  color: #357960;
+  cursor: pointer;
+}
+
+.nav-links-desktop li .active-page,
+.nav-links-desktop li .active-page .cart-icon {
+  color: #357960;
+}
+
+.nav-links-desktop li .cart-icon {
+  font-size: 22px;
+  transition: transform 0.5s ease;
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.nav-links-desktop li .cart-icon:hover {
+  color: #357960;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/*--------- Menu bar icon -------------*/
+.menu-bar-icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*-------- Navbar links for mobiile --------*/
+
+.nav-link-mobile-container {
+  position: absolute;
+  top: 80px;
+  right: 5px;
+  height: 300px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  animation: fadeIn 0.4s ease-in;
+ 
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+ 
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+/* Responsive code */
+@media screen and (max-width: 650px) {
+  .nav-links-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 650px) {
+  .menu-bar-icon {
+    display: none;
+  }
+}
